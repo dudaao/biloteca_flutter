@@ -39,6 +39,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [
             CardEstatistica(
                 valor: livrosAtrasados, tipo: StatCardType.atrasados),
+                // Adicionar clique para ao clicar mostrar livros atrasados
             CardEstatistica(valor: livrosEstoque, tipo: StatCardType.estoque),
             CardEstatistica(
                 valor: livrosEmprestados, tipo: StatCardType.emprestados),

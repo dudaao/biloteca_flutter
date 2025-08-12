@@ -59,11 +59,11 @@ class _DrawerExampleState extends State<DrawerExample> {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.settings),
-              title: const Text('Settings'),
+              leading: const Icon(Icons.book_online),
+              title: const Text('Livros'),
               onTap: () {
                 setState(() {
-                  selectedPage = 'Settings';
+                  selectedPage = 'Livros';
                 });
               },
             ),
@@ -76,6 +76,10 @@ class _DrawerExampleState extends State<DrawerExample> {
             return DashboardScreen();
           } else if (selectedPage == "Catalogo") {
             return BooksCatalogScreen();
+            // Criar a lógica de pegar livros.
+          } else if (selectedPage == "Livros") {
+            return BooksCatalogScreen();
+            // Adicionar listagem de livros, opção de deleção, edição e criação, usar Listas
           } else {
             return Text("$selectedPage");
           }
